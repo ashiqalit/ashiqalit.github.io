@@ -1,0 +1,192 @@
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome CSS -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+<!-- Main Stylesheet File -->
+<link href="css/main.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<style>
+    div.body {
+  font-family: 'Montserrat', sans-serif;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  min-height: 100vh;
+}
+
+nav {
+  background-color: pink;
+}
+
+aside {
+  display: none;
+  background-color: rgb(10, 116, 187);
+  color: white;
+  border-right: 5px solid rgb(2, 106, 175);
+}
+
+main {
+  color: #4C4C4C;
+  background-color: rgb(248, 248, 248);
+}
+
+
+/******************************************
+ MEDIA QUERIES
+******************************************/
+
+
+/* 600px screen width OR larger */
+
+@media only screen and (min-width: 600px) {
+  div.body {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: "aside main" "aside main";
+  }
+  aside {
+    grid-area: aside;
+  }
+  main {
+    grid-area: main;
+  }
+  nav {
+    display: none!important;
+  }
+  .brandText {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  .smallProfileImageDiv {
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .smallProfileImageDiv img {
+    width: 100px;
+    height: 100px;
+  }
+  .imgCircle {
+    border-radius: 50%;
+  }
+  .profileNameBox {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .profileName {
+    font-size: 16px;
+  }
+  .positionTitle {
+    margin-top: 5px;
+  }
+  .leftNavOptions {
+    margin-left: 25px;
+  }
+  .leftNavItemOption {
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+  .leftNavItemOption:hover {
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: orange;
+  }
+  .leftNavOptionIcon {
+    min-width: 20px;
+    font-size: 18px;
+  }
+  .leftNavOption {
+    margin-left: 15px;
+  }
+}
+</style>
+
+<div class="body">
+  <nav>
+    Hi
+  </nav>
+
+  <aside>
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-lg-12 brandText">
+          CarePower.io
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="smallProfileImageDiv">
+            <img class="imgCircle mx-auto d-block" src="imgs\1\current\avatar.jpg">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="profileNameBox">
+            <span class="profileName">John Doe</span>
+            <div class="positionTitle">
+              <span class="badge badge-primary">CEO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="leftNavItemOption">
+            <i class="fas fa-user-edit leftNavOptionIcon"></i><span class="leftNavOption">Profile</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="leftNavItemOption">
+            <i class="fas fa-clock leftNavOptionIcon"></i><span class="leftNavOption">Jobs</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="leftNavItemOption">
+            <i class="fas fa-envelope leftNavOptionIcon"></i><span class="leftNavOption">Support</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="leftNavItemOption">
+            <i class="fas fa-user-friends leftNavOptionIcon"></i><span class="leftNavOption">Refer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="leftNavItemOption">
+            <i class="fas fa-sign-out-alt leftNavOptionIcon"></i><span class="leftNavOption">Logout</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </aside>
+
+  <main>Main</main>
+
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
